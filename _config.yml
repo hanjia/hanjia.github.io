@@ -10,8 +10,8 @@ encoding: utf-8
 title:               Tech Journey
 #tagline:             'foo's website
 description:         Han's blog...
-url: https://hanjia.github.io/
-baseurl: "/"
+url: https://hanjia.github.io
+baseurl: ""
 urlimg: https://hanjia.github.io/images/
 markdown: kramdown
 paginate: 5
@@ -45,7 +45,7 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 # About/contact
 author:
   name:              Han Jia
-  url:               https://twitter.com/abcd
+  url:               https://www.linkedin.com/in/han-jia-0395134a
   avatar:         han_avatar.png
   #email:
 
@@ -60,10 +60,7 @@ owner:
   github:         https://github.com/hanjia
   stackexchange:
   linkedin:       https://www.linkedin.com/in/han-jia-0395134a
-  instagram:
-  flickr:
-  tumblr:
-  google_plus:    https://plus.google.com/+foo
+  google_plus:    https://plus.google.com/u/0/111027612092144544332
 
 ## sidebar links:
 # For external links add external: true
@@ -83,9 +80,6 @@ links:
     external: true
   - title: <i class="iconside iconm-envelop"></i> Contact
     url: /contact/
-  - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/abcd
-    external: true
   - title: <i class="iconside iconm-feed2"></i> Feed
     url: /feed.xml
 

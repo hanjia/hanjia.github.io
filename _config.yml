@@ -4,22 +4,29 @@
 #permalink:           pretty
 permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
+encoding: utf-8
 
 # Setup
-title:               TechJourney
+title:               Tech Journey
 #tagline:             'foo's website
-description:         Han's tech blog...
+description:         Han's blog...
 url: https://hanjia.github.io/
-baseurl: "/lanyon-plus"
+baseurl: "/"
 urlimg: https://hanjia.github.io/images/
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num"
 excerpt_separator: <!--more-->
-default_bg: sitelogo.png
+default_bg: sitebg.jpg
+default_logo: sitelogo.png
 safe: false
 #timezone:    America/Chicago
 future:      true
+
+
+## code highlight options
+syntax_highlighter: rouge
+input: GFM
 
 gems:
   - jekyll-paginate
@@ -27,6 +34,10 @@ gems:
   - font-awesome-sass
   - kramdown
   - rouge
+  - jekyll-mentions
+
+jekyll-mentions:
+  base_url: https://twitter.com
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant"]
@@ -34,7 +45,7 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 # About/contact
 author:
   name:              Han Jia
-  url:               https://hanjia.github.io/
+  url:               https://twitter.com/abcd
   avatar:         han_avatar.png
   #email:
 
@@ -45,8 +56,14 @@ owner:
   #email:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
+  # Social networking links used in footer. Update and remove as you like.
   github:         https://github.com/hanjia
+  stackexchange:
   linkedin:       https://www.linkedin.com/in/han-jia-0395134a
+  instagram:
+  flickr:
+  tumblr:
+  google_plus:    https://plus.google.com/+foo
 
 ## sidebar links:
 # For external links add external: true
@@ -55,20 +72,20 @@ links:
     url: /
   - title: <i class="iconside iconm-user"></i> About
     url: /about/
-#  - title: <i class="iconside iconm-quill"></i> Blog
-#    url: /blog/
+  - title: <i class="iconside iconm-quill"></i> Blog
+    url: /blog/
   - title: <i class="fa fa-tags"></i> Tags
     url: /tags/
   - title: <i class="fa fa-archive"></i> Archive
     url: /archive/
-#  - title: <i class="iconside iconm-wordpress"></i> Old Blog
-#    url: https://foo.wordpress.com
+  - title: <i class="iconside iconm-wordpress"></i> Old Blog
+    url: https://foo.wordpress.com
     external: true
   - title: <i class="iconside iconm-envelop"></i> Contact
     url: /contact/
-#  - title: <i class="iconside iconm-twitter"></i> Twitter
-#    url: https://twitter.com/abcd
-#    external: true
+  - title: <i class="iconside iconm-twitter"></i> Twitter
+    url: https://twitter.com/abcd
+    external: true
   - title: <i class="iconside iconm-feed2"></i> Feed
     url: /feed.xml
 

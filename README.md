@@ -8,7 +8,7 @@ Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](h
 
 [![Build Status](https://travis-ci.org/dyndna/lanyon-plus.svg?branch=master)](https://travis-ci.org/dyndna/lanyon-plus)
 
-[Demo](http://dyndna.github.io/lanyon-plus) | [Download v1.1.0](https://github.com/dyndna/lanyon-plus/releases/tag/v1.1.0)
+[Demo](http://dyndna.github.io/lanyon-plus) | [Download v1.1.1](https://github.com/dyndna/lanyon-plus/releases/tag/v1.1.1)
 
 ### Required edits:
 

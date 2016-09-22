@@ -1,10 +1,15 @@
+- name: Twitter
+  url: https://twitter.com/abcd
+  class: fa fa-twitter-square
+  title: "Follow me @foo"
+
 - name: Google Plus
-  url: https://plus.google.com/u/0/111027612092144544332
+  url: https://plus.google.com/+foo
   class: fa fa-google-plus-square
   title: "Follow me +foo"
 
 - name: GitHub
-  url: https://github.com/hanjia
+  url: https://github.com/xyz123abc
   class: fa fa-github-square
   title: Code repository
 

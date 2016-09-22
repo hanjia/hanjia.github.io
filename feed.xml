@@ -12,15 +12,15 @@ layout: null
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}</id>
     <author>
-      <name>{{ site.owner.name }}</name>
+      <name>{{ site.author.name }}</name>
     </author>
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         {% if post.summaryfeed and post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
+          <description>{{ post.excerpt | xml_escape }}{% include feedfooter.html %}</description>
         {% else %}
-          <description>{{ post.content | xml_escape }}</description>
+          <description>{{ post.content | xml_escape }}{% include feedfooter.html %}</description>
         {% endif %}
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>

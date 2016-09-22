@@ -6,10 +6,10 @@ permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
 
 # Setup
-title:               foo
+title:               TechJourney
 #tagline:             'foo's website
 description:         Han's tech blog...
-url: https://hanjia.github.io/lanyon-plus
+url: https://hanjia.github.io/
 baseurl: "/lanyon-plus"
 urlimg: https://hanjia.github.io/images/
 markdown: kramdown
@@ -34,7 +34,7 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 # About/contact
 author:
   name:              Han Jia
-  url:               https://twitter.com/abcd
+  url:               https://hanjia.github.io/
   avatar:         han_avatar.png
   #email:
 

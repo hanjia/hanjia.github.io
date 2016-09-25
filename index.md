@@ -1,12 +1,12 @@
 ---
 layout: default
 permalink: index.html
-title: Personal Blog of Han Jia
-description: "Han's tech blog"
-
+title: Han's tech blog
+description: "I will keep all the precious coins I found during my tech journey at here."
 ---
 
-## "Far and away the best prize that life has to offer is the chance to work hard at work worth doing." –Theodore Roosevelt
+
+### "Far and away the best prize that life has to offer is the chance to work hard at work worth doing."  -– Theodore Roosevelt
 
 
 <div class="posts">

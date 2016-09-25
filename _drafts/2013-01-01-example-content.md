@@ -4,7 +4,7 @@ title: "Example content"
 date: "2013-01-01"
 slug: "example_content"
 description: "Example content from lanyon. If page description is more than 140 words, it will be shown as post summary on home page and blog index else post excerpt will be shown. Same rule is for html meta description: >140 words in description or first 50 words of posts will be shown as summary. Page excerpt supports markdown formatted summary."
-category: 
+category:
   - views
   - featured
 # tags will also be used as html meta keywords.
@@ -280,7 +280,7 @@ Multiple[^1]<sup>,</sup>[^3] and with comments[^2]
 Want to see something else added? <a href="https://github.com/dyndna/lanyon-plus/issues/new">Open an issue.</a>
 
 [^1]: [lanyon theme](http://lanyon.getpoole.com)
-[^2]: 
+[^2]:
     [lanyon-plus theme](https://github.com/dyndna/lanyon-plus "accessed on {{ page.date | date: '%B %d, %Y' }}")
 
     >Excerpt: Sample post showing enabled features for post: `inline code`, `text highlight`{:.yelhglt}, code block with syntax highlights, embed gist, stylized blockquotes, video and image cards for twitter, markdown tables, inline and code bocks having mathjax support, references, print format, disqus comments, related posts, tags.

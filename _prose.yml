@@ -91,11 +91,6 @@ prose:
           element: "checkbox"
           label: "Comments"
           value: true
-      - name: "mathjax"
-        field:
-          element: "checkbox"
-          label: "MathJax"
-          value: false
       - name: "gistembed"
         field:
           element: "checkbox"

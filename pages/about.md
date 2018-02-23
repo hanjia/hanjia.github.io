@@ -13,7 +13,7 @@ noindex: false
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2016-02-13
+    lastmod: 2018-02-13
 # tags will be used as html meta keywords.
 tags:
   - "Han Jia"
@@ -35,4 +35,4 @@ tags:
 </span>
 </div>
 
-Hi! My name is Han. I'm a software engineer working at Apple's iTunes engineering team. I enjoy outdoor activities, reading, watching sports, playing music.
+Hi! My name is Han. I'm a software engineer who is enthusiastic about applying big data technologies to solving real world problems. Currently I'm working at Apple's iTunes engineering team and building data processing systems. Before this, I spent 3 years at eBay's marketing engineering team. Outside work, I enjoy outdoor activities, reading all sorts of books, watching sports (soccer, basketball...), and playing with music (singing, guitar, piano...).

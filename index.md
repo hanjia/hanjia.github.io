@@ -2,12 +2,12 @@
 layout: default
 permalink: index.html
 title: Han's tech blog
-description: "I will keep all the precious coins I collected during my tech journey at here."
+description: "I will keep all the precious coins I collected along with my tech journey at here."
 ---
 
-
-### "Far and away the best prize that life has to offer is the chance to work hard at work worth doing."  -– Theodore Roosevelt
-
+<div>
+  <p><i>"Far and away the best prize that life has to offer is the chance to work hard at work worth doing."  -– Theodore Roosevelt</i></p>
+</div>
 
 <div class="posts">
   {% for post in site.categories.featured limit:2 %}

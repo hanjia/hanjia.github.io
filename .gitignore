@@ -12,3 +12,4 @@ dist
 .cache-tests
 .cache
 .profiler
+_site

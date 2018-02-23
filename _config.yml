@@ -8,7 +8,7 @@ encoding: utf-8
 
 # Setup
 title:               Tech Journey
-#tagline:             'foo's website
+tagline:             Han's website
 description:         Han's blog...
 url: https://hanjia.github.io
 baseurl: ""
@@ -20,7 +20,7 @@ excerpt_separator: <!--more-->
 default_bg: sitebg.jpg
 default_logo: han_avatar.png
 safe: false
-#timezone:    America/Chicago
+timezone:    America/Los_Angeles
 future:      true
 
 
@@ -41,16 +41,16 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 
 # About/contact
 author:
-  name:              Han Jia
-  url:               https://www.linkedin.com/in/han-jia-0395134a
+  name:           Han Jia
+  url:            https://www.linkedin.com/in/han-jia-0395134a
   avatar:         han_avatar.png
-  #email:
+  email:          johnidealist@gmail.com
 
 # Owner/author information
 owner:
   name:           Han Jia
   avatar:         han_avatar.png
-  #email:
+  email:          johnidealist@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
@@ -81,9 +81,9 @@ links:
     url: /feed.xml
 
 # Google Custom Search:
-google_search: eBay
+google_search: Han Jia
 
 # Analytics and webmaster tools stuff goes here
-#google_analytics:   xyz123abc
+google_analytics:   xyz123abc
 
 ## END ##

@@ -7,20 +7,20 @@ relative_permalinks: false
 encoding: utf-8
 
 # Setup
-title:               My Website
-#tagline:             'foo's website
-description:         Foo's blog...
-url:                 http://localhost:4000
-baseurl:  ""
-urlimg: http://localhost:4000/images/
+title:               Tech Journey
+tagline:             Han's website
+description:         Han's blog...
+url: http://127.0.0.1:4000
+baseurl: ""
+urlimg: http://127.0.0.1:4000/images/
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num"
 excerpt_separator: <!--more-->
 default_bg: sitebg.jpg
-default_logo: sitelogo.png
+default_logo: han_avatar.png
 safe: false
-#timezone:    America/Chicago
+timezone:    America/Los_Angeles
 future:      true
 
 
@@ -36,39 +36,28 @@ gems:
   - rouge
   - jekyll-mentions
 
-jekyll-mentions:
-  base_url: https://twitter.com
-
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant"]
 
 # About/contact
 author:
-  name:              Foo Boo
-  url:               https://twitter.com/abcd
-  avatar:         foo.png
-  #email:           
+  name:           Han Jia
+  url:            https://www.linkedin.com/in/han-jia-0395134a
+  avatar:         han_avatar.png
+  email:          johnidealist@gmail.com
 
 # Owner/author information
 owner:
-  name:           Foo Boo
-  avatar:         foo.png
-  #email:          
+  name:           Han Jia
+  avatar:         han_avatar.png
+  email:          johnidealist@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        abcd
-  facebook:       
-  github:         xyz123abc
-  stackexchange:  
-  linkedin:       https://www.linkedin.com/in/foo
-  instagram:      
-  flickr:
-  tumblr:  
-  google_plus:    https://plus.google.com/+foo
-  # orcid and google scholar IDs are different than standard username.
-  orcid: xyz123abc
-  gscholar: xyz123abc
+  github:         https://github.com/hanjia
+  stackexchange:
+  linkedin:       https://www.linkedin.com/in/han-jia-0395134a
+  google_plus:    https://plus.google.com/u/0/111027612092144544332
 
 ## sidebar links:
 # For external links add external: true
@@ -84,30 +73,17 @@ links:
   - title: <i class="fa fa-archive"></i> Archive
     url: /archive/
   - title: <i class="iconside iconm-wordpress"></i> Old Blog
-    url: https://foo.wordpress.com
+    url: http://johnidealist.blogspot.com/
     external: true
   - title: <i class="iconside iconm-envelop"></i> Contact
     url: /contact/
-  - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/abcd
-    external: true
   - title: <i class="iconside iconm-feed2"></i> Feed
     url: /feed.xml
 
 # Google Custom Search:
-#google_search: xyz123abc
-
-# Twitter stream widget:
-# Replace xyz123abc with your twitter widget id from https://twitter.com/settings/widgets
-#twitter_widget_id: xyz123abc
-
-# Add disqus username for Disqus comment board:
-disqus_shortname: foo
+google_search: Han Jia
 
 # Analytics and webmaster tools stuff goes here
-#google_analytics:   xyz123abc
+google_analytics:   xyz123abc
 
-#### For dummy website only - remove if you wish ####
-github_repo: https://github.com/dyndna/lanyon-plus
-version: 1.1.1
 ## END ##

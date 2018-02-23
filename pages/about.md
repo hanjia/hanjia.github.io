@@ -14,16 +14,19 @@ sitemap:
     priority: 0.7
     changefreq: 'monthly'
     lastmod: 2016-02-13
-# tags will be used as html meta keywords.    
+# tags will be used as html meta keywords.
 tags:
   - "Han Jia"
+  - "Software Engineer"
   - "Seattle"
   - "eBay"
+  - "Apple"
   - "Indiana University"
   - "Wuhan University"
+  - "China"
 ---
 
-<div class="post-author text-center">                       
+<div class="post-author text-center">
             <img src="{{ site.urlimg }}{{ site.owner.avatar }}" alt="{{ site.owner.name }}'s photo" itemprop="image" class="post-avatar img-circle img-responsive"/>
 <span class="social-icons" style="padding-top: 10px; padding-bottom: 1px;">
 <a href="{{ site.url }}/cv" title="Curriculum Vitae" class="social-icons"><i class="iconm iconm-profile" style="vertical-align: top;"></i></a>
@@ -32,6 +35,4 @@ tags:
 </span>
 </div>
 
-Introduction about my self and this blog.
-
-*[volutpat]: Tooltip for abbreviation.
+Hi! My name is Han. I'm a software engineer working at Apple's iTunes engineering team. I enjoy outdoor activities, reading, watching sports, playing music.

@@ -13,3 +13,4 @@ dist
 .cache
 .profiler
 _site
+*/.DS_Store

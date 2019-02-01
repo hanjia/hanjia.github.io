@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Notes about Spark data format
-# date element overrides date in title format.
 date: 2018-02-22
 tag:
   - spark

@@ -10,9 +10,10 @@ tag:
 ---
 
 
-Recently I worked on a project that we need to create persistent unique identifiers for records in our data processing system. By solving the problem, I had a chance to explore and understand some related topics that are usually easy to be ignored.
+Recently I worked on a project in which we need to create unique identifiers for records in our data processing system. By solving the problem, I had a chance to explore and understand some related topics that are usually easy to be ignored.
 
 
+--------------------
 
 Let's first take a look at how .hashcode() and .toString() function are defined in java.lang.Object, which is the root for all Java classes. 
 
@@ -94,6 +95,9 @@ Timed UUID seems to be a good fit.
 
 However, it doesn't guarantee the uniqueness in a distributed system. We had seen some duplicate ids in results. We were generating version 1 Timed UUID (see [Datastax driver's timed UUID implementation](https://docs.datastax.com/en/drivers/java/2.0/com/datastax/driver/core/utils/UUIDs.html#timeBased--) for details), which takes date-time and MAC address into account. 
 Because we have a large number of data partitions in Spark, so it's still possible to encounter a situation where two or multiple executors (JVMs) are running in parallel and on the same physical machine.
+
+
+
 
 
 To avoid this kind of collisions, we decided to combine the timed UUID with a hash value generated from the content (a set of strings in our case). This works well because it's very unlikely to have a collision for the hash value, while those two records are being processed by the same physical machine at the exact same time.

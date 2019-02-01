@@ -15,6 +15,6 @@ A known issue
 
 Screenshots
 
-![Spark UI 1](/images/posts/spark_executor_lost_1)
+![Spark UI 1](/images/posts/spark_executor_lost_1.png)
 
-![Spark UI 2](/images/posts/spark_executor_lost_2)
+![Spark UI 2](/images/posts/spark_executor_lost_2.png)

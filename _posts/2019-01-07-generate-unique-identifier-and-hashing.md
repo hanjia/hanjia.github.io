@@ -84,14 +84,13 @@ Note that this method is using native MurmurHash3 lib provided by Scala. The goo
 -----------------
 
 
-Now back to the original problem. Basically we need to find a way to create unique identifiers to meet the following requirements:\
+Now back to the original problem. Basically we need to find a way to create unique identifiers to meet the following requirements:<br/>
 
-1) Minimize the likelihood of collisions.\
+1) Minimize the likelihood of collisions.<br/>
 
-2) Even the same record should have different ids over different runs.\
+2) Even the same record should have different ids over different runs.<br/>
 
-
-
+<br/>
 
 Timed UUID seems to be a good fit. 
 
@@ -134,7 +133,7 @@ object IDGenerator {
 ```
 ------------------
 
-What if we need the id to be persistent over runs? Same input always leads to the same output. Just as the input variable originalId in the example above. 
+What if we need the id to be persistent over runs? Same input always leads to the same output. Just as the input variable originalId in the example above.<br/>
 
 One important thing to keed in mind is that if your data is a collection, you have to sort the collection first to make sure the elements are in the same order every time before send it to the hasher. Otherwise, the results could still be different even the elements in the collection are the same. 
 

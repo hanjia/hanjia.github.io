@@ -84,17 +84,19 @@ Note that this method is using native MurmurHash3 lib provided by Scala. The goo
 -----------------
 
 
-Now back to the original problem. Basically we need to find a way to create unique identifiers to meet the following requirements:
+Now back to the original problem. Basically we need to find a way to create unique identifiers to meet the following requirements:\
 
-1) Minimize the likelihood of collisions
+1) Minimize the likelihood of collisions.\
 
-2) Even the same record should have different ids over different runs 
+2) Even the same record should have different ids over different runs.\
+
+
 
 
 Timed UUID seems to be a good fit. 
 
-However, it doesn't guarantee the uniqueness in a distributed system. We had seen some duplicate ids in results. We were generating version 1 Timed UUID (see [Datastax driver's timed UUID implementation](https://docs.datastax.com/en/drivers/java/2.0/com/datastax/driver/core/utils/UUIDs.html#timeBased--) for details), which takes date-time and MAC address into account. 
-Because we have a large number of data partitions in Spark, so it's still possible to encounter a situation where two or multiple executors (JVMs) are running in parallel and on the same physical machine.
+However, it doesn't guarantee the uniqueness in a distributed system. We had seen some duplicate ids in results. We were generating version 1 Timed UUIDs (see [Datastax driver's timed UUID implementation](https://docs.datastax.com/en/drivers/java/2.0/com/datastax/driver/core/utils/UUIDs.html#timeBased--) for details), which take date-time and MAC address into account. 
+Because we have a large number of data partitions in Spark, so it's still possible to encounter a situation where two or multiple executors (JVMs) are creating new IDs in parallel and on the same physical machine.
 
 
 

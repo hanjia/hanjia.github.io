@@ -36,4 +36,4 @@ tags:
 </span>
 </div>
 
-Hi! My name is Han Jia. I'm a software engineer who is enthusiastic about applying big data technologies to solving real world problems. Currently I'm working at Apple's iTunes engineering team and building data processing systems. Before this, I spent 3 years at eBay's marketing engineering team. Outside work, I enjoy outdoor activities, reading all sorts of books, watching sports (soccer, basketball etc.), and playing music (singing, guitar, piano).
+Hi! My name is Han Jia. I'm a software engineer who is enthusiastic about applying technologies to solving real world problems. Currently I'm working at Apple's iTunes engineering team and building data processing systems. Before this, I spent 3 years at eBay's marketing engineering team. Outside work, I enjoy outdoor activities, reading all sorts of books, watching sports (soccer, basketball etc.), and playing music (singing, guitar, piano).

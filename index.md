@@ -8,6 +8,7 @@ description: "I will keep all the precious coins I collected along with my tech 
 <div>
   <p><i>"Far and away the best prize that life has to offer is the chance to work hard at work worth doing."  -– Theodore Roosevelt</i></p>
 </div>
+<br/>
 
 <div class="posts">
   {% for post in site.categories.featured limit:2 %}

@@ -8,8 +8,8 @@ encoding: utf-8
 
 # Setup
 title:               Tech Journey
-tagline:             Han's website
-description:         Han's blog...
+tagline:             Han's blog
+description:         Han Jia's tech blog.
 url: https://hanjia.github.io
 baseurl: ""
 urlimg: https://hanjia.github.io/images/
@@ -51,7 +51,6 @@ owner:
   name:           Han Jia
   avatar:         han_avatar.png
   email:          johnidealist@gmail.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
   github:         https://github.com/hanjia

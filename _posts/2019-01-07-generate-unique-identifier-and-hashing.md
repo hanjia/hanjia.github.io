@@ -15,7 +15,7 @@ Recently I worked on a project in which we need to create unique identifiers for
 
 --------------------
 
-Let's first take a look at how .hashcode() and .toString() function are defined in java.lang.Object, which is the root for all Java classes. 
+Let's first take a look at how .hashcode() and .toString() function are implemented in java.lang.Object, which is the root for all Java classes.
 
 ```java
 public String toString() {
@@ -92,9 +92,9 @@ Now back to the original problem. Basically we need to find a way to create uniq
 
 <br/>
 
-Timed UUID seems to be a good fit. 
+Timed UUID seems to be a good fit.
 
-However, it doesn't guarantee the uniqueness in a distributed system. We had seen some duplicate ids in results. We were generating version 1 Timed UUIDs (see [Datastax driver's timed UUID implementation](https://docs.datastax.com/en/drivers/java/2.0/com/datastax/driver/core/utils/UUIDs.html#timeBased--) for details), which take date-time and MAC address into account. 
+However, it doesn't guarantee the uniqueness in a distributed system. We had seen some duplicate ids in results. We were generating version 1 Timed UUIDs (see [Datastax driver's timed UUID implementation](https://docs.datastax.com/en/drivers/java/2.0/com/datastax/driver/core/utils/UUIDs.html#timeBased--) for details), which take date-time and MAC address into account.
 Because we have a large number of data partitions in Spark, so it's still possible to encounter a situation where two or multiple executors (JVMs) are creating new IDs in parallel and on the same physical machine.
 
 
@@ -135,7 +135,7 @@ object IDGenerator {
 
 What if we need the id to be persistent over runs? Same input always leads to the same output. Just as the input variable originalId in the example above.<br/>
 
-One important thing to keed in mind is that if your data is a collection, you have to sort the collection first to make sure the elements are in the same order every time before send it to the hasher. Otherwise, the results could still be different even the elements in the collection are the same. 
+One important thing to keed in mind is that if your data is a collection, you have to sort the collection first to make sure the elements are in the same order every time before send it to the hasher. Otherwise, the results could still be different even the elements in the collection are the same.
 
 ```scala
 def murmur3Hash128BitStringForIdSet(idSet: Seq[Row]): String = {

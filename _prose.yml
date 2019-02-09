@@ -15,8 +15,7 @@ prose:
     - .gitignore
     - .editorconfig
     - .gitattributes
-    - favicon.ico
-    - favicon.png
+    - favicon.jpg
   metadata:
     _posts:
       - name: "published"
@@ -80,7 +79,7 @@ prose:
           element: "text"
           label: "Featured Image or Video frame jpg for twitter card"
           placeholder: "http url or path relative to images dir"
-          value: "sitelogo.png"
+          value: "sitelogo.jpg"
       - name: "show_meta"
         field:
           element: "checkbox"

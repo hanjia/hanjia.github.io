@@ -15,6 +15,8 @@ When we run a Spark application, it's quite common to see an out of memory error
 
 Let's talk about fixes without code changes first. There are a couple of configs in Spark we can tweak. Note that it's not recommended to blindly increase these numbers without checking the implementation first. Also, you need to be clear about the capacity of your cluster and be cautious if the application is running in a shared cluster.
 
+
+
 1. Memory-related Configuration
 
 - spark.executor.memory
@@ -35,6 +37,8 @@ yarn.nodemanager.resource.memory-mb
 
 
 2. Physical Memory Limit
+
+
 On some occasions, we will get an error from YARN suggesting that the application is running beyond the physical memory limits.
 
 `Container [pid=47384,containerID=container_1447669815913_0002_02_000001] is running beyond physical memory limits. Current usage: 17.9 GB of 17.5 GB physical memory used; 18.7 GB of 36.8 GB virtual memory used. Killing container.`
@@ -48,7 +52,8 @@ This config actually determines how many cpu cores that one executor can have. S
 
 
 
-Parallelism
+3. Parallelism
+
 
 spark.default.parallelism VS. repartition()
 
@@ -56,18 +61,20 @@ spark.sql.shuffle.partitions
 
 
 
+4. Cache
+
 
 Cache() VS. Persist()
 
 
 
+5. Join
 
-For join
 spark.sql.autoBroadcastJoinThreshold
 
 
 
 
 References
-1) Tune YARN: https://www.cloudera.com/documentation/enterprise/5-7-x/topics/cdh_ig_yarn_tuning.html
-2) GC: https://databricks.com/blog/2015/05/28/tuning-java-garbage-collection-for-spark-applications.html
+[1]: https://www.cloudera.com/documentation/enterprise/5-7-x/topics/cdh_ig_yarn_tuning.html
+[2]: https://databricks.com/blog/2015/05/28/tuning-java-garbage-collection-for-spark-applications.html
